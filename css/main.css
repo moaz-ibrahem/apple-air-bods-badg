@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #000;
+    max-height: 100000px;
+    font-family: sans-serif;
+    height: 10000px;
+}
+.magical {
+    padding: 0 20%;
+    text-align: left;
+
+}
+.texet {
+    width: 70%;
+    padding: 150px 0;
+    font-size: 1.5rem;
+    /* line-height: 1.8; */
+}
+.texet p {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.3;
+}
+.texet h3 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px 0;
+}
+.conceting {
+    padding: 5px 0;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+#airbods{
+    position: fixed;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+}
