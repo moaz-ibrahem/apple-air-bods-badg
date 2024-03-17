@@ -46,7 +46,7 @@ body {
     z-index: 10;
     transition: 0.5s;
 }
-#conect {
+#conect{
     position: fixed;
     width: 320px;
     height: 625px;
@@ -54,14 +54,66 @@ body {
     left: 45%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    opacity:0;
+    opacity: 0;
     visibility: hidden;
     transition: 0.5s;
 }
-.conceting p {
-    color: #fff;
+#content_pargraph {
     position: fixed;
-    width: 50%;
-    text-align: right;
+    /* top: %; */
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+#content_pargraph h2{
+    color: #fff;
+    margin-bottom: 5px;
     font-size: 1.5rem;
 }
+#content_pargraph p{
+    color: #777;
+    font-size: 1.3rem;
+}
+#backphone,
+#caverphone,
+#usephone {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#usephone {
+    border-radius: 50px;
+}
+#useing_pargraph{
+    position: fixed;
+    /* top: %; */
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+#useing_pargraph h2{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+#useing_pargraph p{
+    color: #777;
+    font-size: 1.3rem;
+}
+#useing_pargraph p .gray{
+    color: #00ff41;
+}
+
