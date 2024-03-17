@@ -11,9 +11,7 @@ window.onscroll = function () {
     let value = scrollY ;
     if (scrollY >= 520) {
         airbods.style.visibility =  "visible" ;
-        if (airbods.style.visibility =  "visible"){
-            airbods.style.opacity = value/600 + "0" ;
-        }
+        airbods.style.opacity = value/600 + "0" ;
     }else {
         airbods.style.opacity = value/800 - "0" ;
     }
@@ -21,43 +19,41 @@ window.onscroll = function () {
         conect.style.visibility =  "visible" ;
         contentPargraph.style.visibility =  "visible" ;
         contentPargraph.style.top =  60 + "%" ;
-        if (conect.style.visibility =  "visible"){
-            conect.style.opacity = value/800 + "0" ;
-            contentPargraph.style.top =  50 + "%" ;
-            contentPargraph.style.opacity = value/800 + "0" ;
-        }
+        conect.style.opacity = value/800 + "0" ;
+        contentPargraph.style.top =  50 + "%" ;
+        contentPargraph.style.opacity = value/800 + "0" ;
     }else {
         conect.style.visibility =  "hidden" ;
         contentPargraph.style.visibility =  "hidden" ;
         conect.style.opacity = value/800 - "0" ;
         contentPargraph.style.opacity = value/800 - "0" ;
-        contentPargraph.style.top =  58 + "%" ;
+        contentPargraph.style.top =  60 + "%" ;
     }
     if (scrollY >= 800){
         conect.style.display = "none";
-        contentPargraph.style.top =  40 + "%" ;
+        contentPargraph.style.top =  20 + "%" ;
         contentPargraph.style.opacity = "0" ;
         backphone.style.visibility =  "visible" ;
         caverphone.style.visibility =  "visible" ;
         usephone.style.visibility =  "visible" ;
-        if(backphone.style.visibility =  "visible"){
-            backphone.style.opacity = value/800 + "0" ;
-            caverphone.style.opacity = value/800 + "0" ;
-            usephone.style.opacity = value/800 + "0" ;
-            useingPargraph.style.top =  50 + "%" ;
-            useingPargraph.style.opacity = value/800 + "0" ;
-        }        
+        useingPargraph.style.visibility =  "visible" ;
+        backphone.style.opacity = value/1200 + "0" ;
+        caverphone.style.opacity = value/1200 + "0" ;
+        usephone.style.opacity = value/1200 + "0" ;
+        useingPargraph.style.opacity = value/1200 + "0" ;
+        useingPargraph.style.top =  50 + "%" ;
     }else{
         conect.style.display = "block";
         contentPargraph.style.display = "block";
         backphone.style.visibility =  "hidden" ;
         caverphone.style.visibility =  "hidden" ;
         usephone.style.visibility =  "hidden" ;
-        backphone.style.opacity = value/800 - "0" ;
-        caverphone.style.opacity = value/800 - "0" ;
-        usephone.style.opacity = value/800 - "0" ;
-        useingPargraph.style.opacity = value/800 - "0" ;
-        useingPargraph.style.top =  55 + "%" ;
+        useingPargraph.style.visibility =  "hidden" ;
+        backphone.style.opacity = value/1200 - "0" ;
+        caverphone.style.opacity = value/1200 - "0" ;
+        usephone.style.opacity = value/1200 - "0" ;
+        useingPargraph.style.opacity = value/1200 - "0" ;
+        useingPargraph.style.top =  80 + "%" ;
     }
     console.log(value);
 };

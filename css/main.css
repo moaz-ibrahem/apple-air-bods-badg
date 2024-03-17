@@ -95,7 +95,6 @@ body {
 }
 #useing_pargraph{
     position: fixed;
-    /* top: %; */
     left: 70%;
     transform: translate(-50%, -50%);
     width: 20%;
