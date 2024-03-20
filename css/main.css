@@ -27,7 +27,30 @@ body {
     color: #fff;
     margin: 20px 0;
 }
-    .conceting {
+@media (max-width:450px) {
+    .magical {
+        padding: 0 5%;
+        text-align: left;
+    }
+    .texet {
+        padding: 100px 0;
+        width: 100%;
+        z-index: 11;
+    }
+    .texet p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.3;
+    }
+    .texet h3 {
+        font-size: 2.7rem;
+        font-weight: bold;
+        color: #fff;
+        margin: 20px 0;
+    }
+}
+.conceting {
     padding: 5px 0;
     width: 100%;
     height: 700px;
@@ -35,13 +58,23 @@ body {
 }
 #airbods{
     position: fixed;
-    /* top: 78%; */
     left: 35%;
     transform: translate(-50%, -50%);
     opacity: 0;
     visibility: hidden;
     z-index: 10;
-    transition: 0.9s;
+    transition: 0.5s;
+}
+@media (max-width:450px) {
+    .conceting {
+        position: relative;
+        padding: 5px 0;
+        width: 50%;
+        height: 700px;
+    }
+    #airbods{
+        left: 35% !important;
+    }
 }
 #conect{
     position: fixed;
@@ -53,18 +86,16 @@ body {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 #content_pargraph {
     position: fixed;
-    /* top: %; */
     left: 70%;
     transform: translate(-50%, -50%);
     width: 20%;
     text-align: left;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s;
 }
 #content_pargraph h2{
     color: #fff;
@@ -74,6 +105,25 @@ body {
 #content_pargraph p{
     color: #777;
     font-size: 1.3rem;
+}
+@media (max-width:450px) {
+    #conect{
+        width: 160px;
+        height: 345px;
+        top: 48%;
+        left: 60%;
+    }
+    #content_pargraph {
+        left: 50%;
+        width: 70%;
+    }
+    #content_pargraph h2{
+        font-size: 1.1rem;
+    }
+    #content_pargraph p{
+        color: #797979;
+        font-size: .9rem;
+    }
 }
 #backphone,
 #caverphone,
@@ -98,7 +148,6 @@ body {
     text-align: left;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s;
 }
 #useing_pargraph h2{
     color: #fff;
@@ -111,5 +160,32 @@ body {
 }
 #useing_pargraph p .gray{
     color: #00ff41;
+}
+@media (max-width:450px) {
+    #backphone,
+    #caverphone,
+    #usephone {
+        width: 160px;
+        height: 345px;
+        top: 48%;
+        left: 60%;
+    }
+    #usephone {
+        width: 145px;
+        height: 330px;
+        border-radius: 30px;
+    }
+    #useing_pargraph{
+        left: 50%;
+        width: 70%;
+    }
+    #useing_pargraph h2{
+        font-size: 1.1rem;
+
+    }
+    #useing_pargraph p{
+        color: #797979;
+        font-size: .9rem;
+    }
 }
 
