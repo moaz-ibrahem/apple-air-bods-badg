@@ -27,6 +27,75 @@ body {
     color: #fff;
     margin: 20px 0;
 }
+.conceting {
+    padding: 5px 0;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+#airbods{
+    position: fixed;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: 0.5s;
+}
+#conect{
+    position: fixed;
+    width: 320px;
+    height: 625px;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+#content_pargraph,
+#useing_pargraph {
+    position: fixed;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+}
+#content_pargraph h2,
+#useing_pargraph h2{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+#content_pargraph p,
+#useing_pargraph p{
+    color: #777;
+    font-size: 1.3rem;
+}
+#backphone,
+#caverphone,
+#usephone {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#usephone {
+    border-radius: 50px;
+}
+#useing_pargraph p .gray{
+    color: #00ff41;
+}
+/* ############################ */
+/* ######## media qery ######## */
+/* ############################ */
 @media (max-width:450px) {
     .magical {
         padding: 0 5%;
@@ -49,23 +118,7 @@ body {
         color: #fff;
         margin: 20px 0;
     }
-}
-.conceting {
-    padding: 5px 0;
-    width: 100%;
-    height: 700px;
-    position: relative;
-}
-#airbods{
-    position: fixed;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 10;
-    transition: 0.5s;
-}
-@media (max-width:450px) {
+    /* ########### */
     .conceting {
         position: relative;
         padding: 5px 0;
@@ -75,117 +128,34 @@ body {
     #airbods{
         left: 35% !important;
     }
-}
-#conect{
-    position: fixed;
-    width: 320px;
-    height: 625px;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.1s;
-}
-#content_pargraph {
-    position: fixed;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    text-align: left;
-    visibility: hidden;
-    opacity: 0;
-}
-#content_pargraph h2{
-    color: #fff;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-}
-#content_pargraph p{
-    color: #777;
-    font-size: 1.3rem;
-}
-@media (max-width:450px) {
+    /* ########### */
+    #backphone,
+    #caverphone,
+    #usephone,
     #conect{
         width: 160px;
         height: 345px;
         top: 48%;
         left: 60%;
     }
-    #content_pargraph {
+    #content_pargraph,
+    #useing_pargraph {
         left: 50%;
         width: 70%;
     }
-    #content_pargraph h2{
+    #content_pargraph h2,
+    #useing_pargraph h2{
         font-size: 1.1rem;
     }
-    #content_pargraph p{
+    #content_pargraph p,
+    #useing_pargraph p{
         color: #797979;
         font-size: .9rem;
-    }
-}
-#backphone,
-#caverphone,
-#usephone {
-    position: fixed;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-#usephone {
-    border-radius: 50px;
-}
-#useing_pargraph{
-    position: fixed;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    text-align: left;
-    visibility: hidden;
-    opacity: 0;
-}
-#useing_pargraph h2{
-    color: #fff;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-}
-#useing_pargraph p{
-    color: #777;
-    font-size: 1.3rem;
-}
-#useing_pargraph p .gray{
-    color: #00ff41;
-}
-@media (max-width:450px) {
-    #backphone,
-    #caverphone,
-    #usephone {
-        width: 160px;
-        height: 345px;
-        top: 48%;
-        left: 60%;
     }
     #usephone {
         width: 145px;
         height: 330px;
         border-radius: 30px;
-    }
-    #useing_pargraph{
-        left: 50%;
-        width: 70%;
-    }
-    #useing_pargraph h2{
-        font-size: 1.1rem;
-
-    }
-    #useing_pargraph p{
-        color: #797979;
-        font-size: .9rem;
     }
 }
 
